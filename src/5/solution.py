@@ -1,6 +1,5 @@
 import sys
 import numpy as np
-import threading
 
 
 def parse_seeds(line):
@@ -103,17 +102,12 @@ def resolve_second_task(file_name):
             if check_if_seed_exists(seeds_ranges, seed):
                 return i
 
+        # BRUTE FORCE SOLUTION
+
         # lowest_location = sys.maxsize * 2 + 1
 
         # for seed_range in seeds_ranges:
-        #     print("Starting seed range: " + str(seed_range))
         #     for i in range(seed_range[0], seed_range[0] + seed_range[1]):
-        #         if i % 100000 == 0:
-        #             print(
-        #                 "progress: "
-        #                 + str((i - seed_range[0]) / seed_range[1] * 100)
-        #                 + "%"
-        #             )
         #         location = find_seed_location(i, maps)
         #         lowest_location = min(lowest_location, location)
 

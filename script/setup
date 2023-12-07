@@ -10,3 +10,4 @@ source .venv/bin/activate # Activate the virtual environment.
 apt install shellcheck # Install shellcheck.
 pip install poetry # Install poetry.
 poetry install --no-root # Install dependencies.
+pre-commit install # Install pre-commit hooks.

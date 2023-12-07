@@ -17,7 +17,7 @@ def get_ready_solutions():
     return sorted(os.listdir(SRC_DIR))
 
 
-def test_solution(day_number):
+def check_solution(day_number):
     sys.path.append(os.path.abspath(SRC_DIR))
     sys.path.append(os.path.abspath(SRC_DIR + day_number))
 
@@ -40,7 +40,12 @@ def test_solution(day_number):
     print("Tests passed for " + day_number)
 
 
+def test_solutions():
+    for i in get_ready_solutions():
+        check_solution(i)
+
+
 if __name__ == "__main__":
     for i in get_ready_solutions():
-        test_solution(i)
+        check_solution(i)
     print("All tests passed!")

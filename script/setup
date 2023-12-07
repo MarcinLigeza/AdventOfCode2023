@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# script setup: Set up the development environment.
+
+set -e # Exit immediately if a command exits with a non-zero status.
+
+python3 -m venv .venv # Create a virtual environment.
+source .venv/bin/activate # Activate the virtual environment.
+
+pip install -r requirements.txt # Install dependencies.

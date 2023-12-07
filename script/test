@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# script/test: Run the test suite.
+
+set -e  # Exit immediately if a command exits with a non-zero status.
+
+source "$(dirname "${BASH_SOURCE[0]}")/setup" # Load the common setup functions.
+
+echo "Running tests..."
+
+python3 test/test.py

@@ -14,8 +14,18 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: '../'
     steps:
-      - uses: armand-sauzay/actions-python/test@v1
+      - run: |
+          pwd
+      - run: |
+          ls -la
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-flags: --version
+          fetch-depth: 0
+      - name: Run Tests 
+        run: |
+          ./scritps/setup

@@ -2,9 +2,9 @@ import importlib
 import os
 import sys
 
-SRC_DIR = "src/"
+SRC_DIR = "AdventOfCode2023/src/"
 
-TEST_DATA_DIR = "test_data/"
+TEST_DATA_DIR = "test/data/"
 
 DATA1_FILE = "/data1.txt"
 DATA2_FILE = "/data2.txt"

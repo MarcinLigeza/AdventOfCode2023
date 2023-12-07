@@ -1,5 +1,5 @@
-from enum import Enum
 from collections import Counter
+from enum import Enum
 
 
 class Types(Enum):

@@ -7,4 +7,7 @@ set -e # Exit immediately if a command exits with a non-zero status.
 python3 -m venv .venv # Create a virtual environment.
 source .venv/bin/activate # Activate the virtual environment.
 
+sudo apt install python3-pip # Install pip.
+sudo apt install python3-venv # Install venv.
+sudo apt install shellcheck # Install shellcheck.
 pip install -r requirements.txt # Install dependencies.

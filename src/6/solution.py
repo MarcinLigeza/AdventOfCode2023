@@ -1,5 +1,4 @@
 import numpy as np
-import time
 
 
 def calculate_distance(load_time, race_time):

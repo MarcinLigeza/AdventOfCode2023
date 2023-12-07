@@ -57,5 +57,5 @@ def resolve_second_task(file_name):
 
 
 if __name__ == "__main__":
-    print(resolve_first_task("test_data/6/data.txt"))
-    print(resolve_second_task("test_data/6/data.txt"))
+    print(resolve_first_task("test/data/6/data1.txt"))
+    print(resolve_second_task("test/data/6/data2.txt"))

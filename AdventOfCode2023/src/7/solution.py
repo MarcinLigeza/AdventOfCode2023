@@ -39,7 +39,5 @@ def resolve_second_task(file_name):
 
 
 if __name__ == "__main__":
-    print(resolve_first_task("test_data/7/data.txt"))
-    print(resolve_second_task("test_data/7/data.txt"))
-    print(resolve_first_task("private_test_data/7/data.txt"))
-    print(resolve_second_task("private_test_data/7/data.txt"))
+    print(resolve_first_task("test/data/7/data1.txt"))
+    print(resolve_second_task("test/data/7/data2.txt"))
